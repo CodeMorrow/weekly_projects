@@ -8,7 +8,7 @@ var pigLatin = {
 };
 
 var handlers = {
-  addPhrase: function() {
+  addPhrase: function() {debugger;
     var addPhraseToTranslate = document.getElementById('addPhraseToTranslate');
     if(addPhraseToTranslate.value !== '') {
       pigLatin.addPhrase(addPhraseToTranslate.value);
@@ -29,7 +29,7 @@ var view = {
         showPigLatinBefore.innerHTML += userPhrase.userPhraseText;
     });
   }, 
-  displayPigLatin: function() {debugger;
+  displayPigLatin: function() {
     var splitPhrase = pigLatin.phrase[pigLatin.phrase.length - 1].userPhraseText;
     var splitArray = splitPhrase.split(' ');
     pigLatin.phrase.forEach(function(userPhrase, position) { 
